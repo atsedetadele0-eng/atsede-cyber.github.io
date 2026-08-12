@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atsede Tadele | Cybersecurity Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #1f2937;
+        }
+
+        .logo {
+            color: #22c55e;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #e5e7eb;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #22c55e;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #22c55e;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #9ca3af;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #22c55e;
+            color: #06100a;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        section h2 {
+            color: #22c55e;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .about,
+        .skills,
+        .projects {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .skills-grid,
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #111827;
+            padding: 25px;
+            border: 1px solid #1f2937;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            color: #22c55e;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #9ca3af;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111827;
+            color: #9ca3af;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">AT | CYBERSECURITY</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Hi, I'm <span>Atsede Tadele</span></h1>
+
+    <p>
+        Cybersecurity Student | Aspiring Penetration Tester |
+        Linux & Web Security Enthusiast
+    </p>
+
+    <a class="button" href="#projects">View My Work</a>
+</section>
+
+<section id="about">
+    <div class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a cybersecurity student passionate about information security,
+            penetration testing, networking, Linux, and web application security.
+            I am continuously developing my practical skills through hands-on
+            labs, security testing, and cybersecurity projects.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="skills">
+        <h2>Cybersecurity Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="card">
+                <h3>Network Security</h3>
+                <p>
+                    Networking fundamentals, IP addressing, ports,
+                    protocols, reconnaissance and network security concepts.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Linux</h3>
+                <p>
+                    Linux command line, file management, permissions,
+                    processes and security tools.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Web Security</h3>
+                <p>
+                    HTTP, APIs, authentication, authorization,
+                    security headers and web application testing.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Penetration Testing</h3>
+                <p>
+                    Reconnaissance, vulnerability assessment,
+                    security testing and penetration testing methodology.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="projects">
+        <h2>Projects & Labs</h2>
+
+        <div class="projects-grid">
+
+            <div class="card">
+                <h3>Linux Security Labs</h3>
+                <p>
+                    Hands-on Linux exercises covering commands,
+                    permissions, files and system administration.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Web Application Security Testing</h3>
+                <p>
+                    Practicing authorized web security testing,
+                    HTTP analysis, API testing and vulnerability identification.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cybersecurity Learning Labs</h3>
+                <p>
+                    Documenting cybersecurity exercises, tools,
+                    techniques and lessons learned from controlled labs.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="about">
+        <h2>Contact</h2>
+
+        <p>
+            Interested in cybersecurity, penetration testing,
+            collaboration or internship opportunities?
+        </p>
+
+        <br>
+
+        <a class="button" href="https://github.com/atsedetadele0-eng">
+            GitHub
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Atsede Tadele | Cybersecurity Portfolio
+</footer>
+
+</body>
+</html>
